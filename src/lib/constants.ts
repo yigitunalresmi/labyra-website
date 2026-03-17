@@ -50,24 +50,21 @@ export const FEATURES = [
 
 export const PLANS = [
   {
-    name: "Trial",
-    price: "Ücretsiz",
-    period: "14 gün",
-    description: "Labyra Label'ı deneyin",
+    name: "Lite",
+    description: "Küçük işletmeler için",
     features: [
-      "500 ürüne kadar",
-      "1 cihaz",
-      "Temel etiket tasarımı",
+      "2.000 ürüne kadar",
+      "5 cihaza kadar",
+      "Standart etiket tasarımı",
       "CSV import/export",
+      "Toplu baskı",
       "E-posta desteği",
     ],
-    cta: "Ücretsiz Dene",
+    cta: "İletişime Geçin",
     highlighted: false,
   },
   {
     name: "Pro",
-    price: "\u20ba299",
-    period: "/ ay",
     description: "Büyüyen işletmeler için",
     features: [
       "100.000 ürüne kadar",
@@ -79,24 +76,8 @@ export const PLANS = [
       "Öncelikli destek",
       "Otomatik güncellemeler",
     ],
-    cta: "Pro'ya Geçin",
+    cta: "İletişime Geçin",
     highlighted: true,
-  },
-  {
-    name: "Lite",
-    price: "\u20ba149",
-    period: "/ ay",
-    description: "Küçük işletmeler için",
-    features: [
-      "2.000 ürüne kadar",
-      "5 cihaza kadar",
-      "Standart etiket tasarımı",
-      "CSV import/export",
-      "Toplu baskı",
-      "E-posta desteği",
-    ],
-    cta: "Lite'ı Seçin",
-    highlighted: false,
   },
 ];
 
@@ -114,8 +95,8 @@ export const FAQ_ITEMS = [
     a: "EAN-13, EAN-8, Code128, Code39, UPC-A, ISBN ve QR kod desteklenmektedir. Ayrıca özel barkod formatları da eklenebilir.",
   },
   {
-    q: "Deneme sürümü ne kadar sürer?",
-    a: "14 gün boyunca tüm özellikleri ücretsiz deneyebilirsiniz. Deneme sonunda herhangi bir ücretlendirme yapılmaz.",
+    q: "Planlar ve fiyatlandırma nasıl işliyor?",
+    a: "Lite ve Pro olmak üzere iki plan sunuyoruz. Fiyatlandırma detayları için bizimle iletişime geçin, işletmenize en uygun planı birlikte belirleyelim.",
   },
   {
     q: "Verilerim güvenli mi?",

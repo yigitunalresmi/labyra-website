@@ -27,9 +27,7 @@ export default function Navbar() {
       <div className="max-w-[1200px] mx-auto flex items-center justify-between px-6 md:px-10 h-[72px]">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="logo-spin">
-            <LabyraLogo className="w-8 h-8" />
-          </div>
+          <LabyraLogo className="w-8 h-8" />
           <span className="text-xl font-bold tracking-tight">LABYRA</span>
         </Link>
 

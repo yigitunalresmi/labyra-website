@@ -1,23 +1,13 @@
 import Link from "next/link";
 import {
-  Package,
-  Tags,
-  Printer,
-  ScanBarcode,
-  FileSpreadsheet,
-  CreditCard,
   ArrowRight,
-  CheckCircle2,
   Monitor,
   Zap,
   Shield,
+  Lightbulb,
+  Layers,
+  HeartHandshake,
 } from "lucide-react";
-
-const ICON_MAP: Record<string, React.ElementType> = {
-  Package, Tags, Printer, ScanBarcode, FileSpreadsheet, CreditCard,
-};
-
-import { FEATURES } from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -29,41 +19,36 @@ export default function Home() {
 
         <div className="max-w-[1200px] mx-auto px-6 md:px-10">
           <div className="max-w-3xl">
-            <div className="animate-fade-in">
-              <span className="inline-block text-sm font-medium text-gold-dark bg-tag-bg rounded-full px-4 py-1.5 mb-6">
-                Labyra Label v1.0 — Masaüstü uygulaması yaklaşıyor
-              </span>
-            </div>
-
-            <h1 className="animate-fade-in animate-fade-in-delay-1 text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.08] tracking-tight mb-6">
+            <h1 className="animate-fade-in text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.08] tracking-tight mb-6">
               İş dünyasının karmaşıklığına{" "}
               <span className="text-gold-gradient">sade bir yanıt</span>
             </h1>
 
-            <p className="animate-fade-in animate-fade-in-delay-2 text-lg md:text-xl text-muted leading-relaxed max-w-xl mb-10">
-              İş süreçlerinizi daha az adıma indirin. Ürün yönetiminden etiket
-              baskısına, tek platformda güç ve sadelik.
+            <p className="animate-fade-in animate-fade-in-delay-1 text-lg md:text-xl text-muted leading-relaxed max-w-xl mb-10">
+              Labyra, işletmelerin günlük operasyonlarını sadeleştiren
+              profesyonel yazılım çözümleri sunar. Karmaşık süreçler yerine
+              sade ve güçlü araçlar.
             </p>
 
-            <div className="animate-fade-in animate-fade-in-delay-3 flex flex-wrap gap-4">
+            <div className="animate-fade-in animate-fade-in-delay-2 flex flex-wrap gap-4">
               <Link
-                href="/iletisim"
+                href="/urunler/labyra-label"
                 className="btn-shimmer inline-flex items-center gap-2 bg-cta text-white font-medium rounded-xl px-7 py-3.5 hover:bg-cta-hover transition-colors"
               >
-                Demo Talep Et
+                Ürünlerimizi Keşfedin
                 <ArrowRight size={18} />
               </Link>
               <Link
-                href="/urunler/labyra-label"
+                href="/iletisim"
                 className="inline-flex items-center gap-2 border border-border text-text font-medium rounded-xl px-7 py-3.5 hover:bg-surface transition-colors"
               >
-                Nasıl çalışır?
+                İletişime Geçin
               </Link>
             </div>
           </div>
 
           {/* Proof Bar */}
-          <div className="animate-fade-in animate-fade-in-delay-4 mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0 md:divide-x divide-border bg-surface rounded-2xl border border-border p-8">
+          <div className="animate-fade-in animate-fade-in-delay-3 mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0 md:divide-x divide-border bg-surface rounded-2xl border border-border p-8">
             {[
               { value: "%80", label: "Daha az tıklama" },
               { value: "3x", label: "Daha hızlı süreç" },
@@ -80,56 +65,72 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── FEATURES ── */}
+      {/* ── YAKLAŞIMIMIZ ── */}
       <section className="py-20 md:py-32 bg-surface">
         <div className="max-w-[1200px] mx-auto px-6 md:px-10">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-              Tek platformda tüm ihtiyaçlarınız
+              Yaklaşımımız
             </h2>
             <p className="text-muted text-lg">
-              Ürün yönetiminden etiket baskısına, CSV import&apos;tan fiyat taramaya
-              — her şey Labyra Label içinde.
+              Teknolojiyi karmaşıklaştırmadan, işletmelerin gerçek
+              ihtiyaçlarına odaklanıyoruz.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {FEATURES.map((feature) => {
-              const Icon = ICON_MAP[feature.icon] || Package;
-              return (
-                <div
-                  key={feature.title}
-                  className="group p-8 rounded-2xl border border-border bg-bg hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-tag-bg flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors">
-                    <Icon size={24} className="text-gold-dark" />
-                  </div>
-                  <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-sm text-muted leading-relaxed">
-                    {feature.description}
-                  </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: Lightbulb,
+                title: "Sadelik",
+                desc: "Her özellik minimum adımla erişilebilir. Arayüz değil, sonuç odaklıyız.",
+              },
+              {
+                icon: Layers,
+                title: "Entegrasyon",
+                desc: "Mevcut iş akışlarınıza uyum sağlayan, öğrenme eğrisi düşük çözümler.",
+              },
+              {
+                icon: HeartHandshake,
+                title: "Yanınızdayız",
+                desc: "Yazılımın önünde değil, yanında duruyoruz. Gerçek iş akışlarından öğreniyoruz.",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="group p-8 rounded-2xl border border-border bg-bg hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              >
+                <div className="w-12 h-12 rounded-xl bg-tag-bg flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors">
+                  <item.icon size={24} className="text-gold-dark" />
                 </div>
-              );
-            })}
+                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                <p className="text-sm text-muted leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ── WHY LABYRA ── */}
+      {/* ── ÜRÜNÜMÜZ: LABYRA LABEL ── */}
       <section className="py-20 md:py-32">
         <div className="max-w-[1200px] mx-auto px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
+              <span className="inline-block text-sm font-medium text-gold-dark bg-tag-bg rounded-full px-4 py-1.5 mb-6">
+                Ürünümüz
+              </span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-                Karmaşık değil —{" "}
-                <span className="text-gold-gradient">sadece derin</span>
+                Labyra{" "}
+                <span className="text-gold-gradient">Label</span>
               </h2>
               <p className="text-muted text-lg leading-relaxed mb-8">
-                Labyra, karmaşık iş süreçlerini basit adımlara dönüştürür.
-                Arayüz değil sonuç odaklıyız.
+                Ürün, barkod ve etiket yönetimini tek bir masaüstü uygulamasında
+                birleştirin. İnternet gerektirmez, verileriniz sizde kalır.
               </p>
 
-              <div className="space-y-5">
+              <div className="space-y-5 mb-8">
                 {[
                   {
                     icon: Monitor,
@@ -139,7 +140,7 @@ export default function Home() {
                   {
                     icon: Zap,
                     title: "Anlık Performans",
-                    desc: "SQLite tabanlı yerel veritabanı ile milisaniye seviyesinde işlem süresi.",
+                    desc: "SQLite tabanlı yerel veritabanı ile milisaniye seviyesinde işlem.",
                   },
                   {
                     icon: Shield,
@@ -158,9 +159,16 @@ export default function Home() {
                   </div>
                 ))}
               </div>
+
+              <Link
+                href="/urunler/labyra-label"
+                className="inline-flex items-center gap-2 text-sm font-medium text-gold-dark hover:text-gold transition-colors"
+              >
+                Labyra Label hakkında daha fazla <ArrowRight size={16} />
+              </Link>
             </div>
 
-            {/* App Preview Placeholder */}
+            {/* App Preview */}
             <div className="relative">
               <div className="bg-[#0A0A0A] rounded-2xl border border-[#2a2a2a] p-6 shadow-2xl">
                 <div className="flex gap-2 mb-4">
@@ -171,6 +179,7 @@ export default function Home() {
                 <div className="aspect-[16/10] bg-[#111] rounded-lg flex items-center justify-center overflow-hidden">
                   <div className="text-center">
                     <div className="flex items-center justify-center gap-2 mb-3">
+                      {/* Barcode icon for Label product */}
                       <svg viewBox="0 0 32 32" className="w-8 h-8 text-gold" fill="currentColor">
                         <rect x="2" y="4" width="2" height="24" rx="1" />
                         <rect x="6" y="4" width="3" height="24" rx="1" />
@@ -193,7 +202,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── HOW IT WORKS ── */}
+      {/* ── 3 ADIM ── */}
       <section className="py-20 md:py-32 bg-surface">
         <div className="max-w-[1200px] mx-auto px-6 md:px-10">
           <div className="text-center max-w-2xl mx-auto mb-16">
@@ -209,18 +218,18 @@ export default function Home() {
             {[
               {
                 step: "01",
+                title: "İletişime Geçin",
+                desc: "İhtiyaçlarınızı anlatalım, size en uygun planı birlikte belirleyelim.",
+              },
+              {
+                step: "02",
                 title: "Kurun",
                 desc: "Labyra Label installer'ı indirin ve Windows bilgisayarınıza kurun. Tek tıkla kurulum.",
               },
               {
-                step: "02",
-                title: "Aktarın",
-                desc: "Mevcut ürün listenizi CSV veya Excel ile içeri aktarın. Otomatik sütun eşleştirme.",
-              },
-              {
                 step: "03",
                 title: "Başlayın",
-                desc: "Etiketlerinizi tasarlayın, barkodları okutun, toplu baskı yapın. Hepsi hazır.",
+                desc: "Ürünlerinizi aktarın, etiketlerinizi tasarlayın, barkodları okutun. Hepsi hazır.",
               },
             ].map((item) => (
               <div
@@ -246,24 +255,24 @@ export default function Home() {
           <div className="relative bg-cta text-white rounded-3xl p-12 md:p-20 text-center overflow-hidden">
             <div className="absolute top-0 right-0 w-[300px] h-[300px] rounded-full bg-gold/10 blur-[80px] pointer-events-none" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4 relative z-10">
-              Labyra Label&apos;ı ücretsiz deneyin
+              İş süreçlerinizi sadeleştirmeye hazır mısınız?
             </h2>
             <p className="text-white/70 text-lg mb-8 max-w-lg mx-auto relative z-10">
-              14 gün boyunca tüm özellikleri keşfedin. Kredi kartı gerekmez.
+              Labyra ile tanışın. Size en uygun çözümü birlikte belirleyelim.
             </p>
             <div className="flex flex-wrap justify-center gap-4 relative z-10">
               <Link
                 href="/iletisim"
                 className="btn-shimmer inline-flex items-center gap-2 bg-white text-cta font-medium rounded-xl px-7 py-3.5 hover:bg-white/90 transition-colors"
               >
-                Demo Talep Et
+                İletişime Geçin
                 <ArrowRight size={18} />
               </Link>
               <Link
-                href="/fiyatlandirma"
+                href="/urunler/labyra-label"
                 className="inline-flex items-center gap-2 border border-white/30 text-white font-medium rounded-xl px-7 py-3.5 hover:bg-white/10 transition-colors"
               >
-                Fiyatları Gör
+                Labyra Label
               </Link>
             </div>
           </div>

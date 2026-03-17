@@ -5,7 +5,7 @@ import { PLANS } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Fiyatlandırma",
-  description: "Labyra Label fiyat planları. Trial, Lite ve Pro seçenekleri ile işletmenize uygun planı seçin.",
+  description: "Labyra Label fiyat planları. Lite ve Pro seçenekleri ile işletmenize uygun planı seçin.",
 };
 
 export default function PricingPage() {
@@ -15,17 +15,17 @@ export default function PricingPage() {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            Sade ve şeffaf{" "}
-            <span className="text-gold-gradient">fiyatlandırma</span>
+            İşletmenize uygun{" "}
+            <span className="text-gold-gradient">planı seçin</span>
           </h1>
           <p className="text-muted text-lg">
-            Gizli ücret yok. İstediğiniz zaman iptal edin.
+            İhtiyacınıza göre Lite veya Pro. Fiyat bilgisi için bizimle iletişime geçin.
           </p>
         </div>
 
         {/* Plans */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {[PLANS[0], PLANS[2], PLANS[1]].map((plan) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          {PLANS.map((plan) => (
             <div
               key={plan.name}
               className={`relative rounded-2xl border p-8 flex flex-col ${
@@ -39,14 +39,9 @@ export default function PricingPage() {
                   En Popüler
                 </span>
               )}
-              <div className="mb-6">
-                <h3 className="text-xl font-bold mb-1">{plan.name}</h3>
-                <p className="text-sm text-muted">{plan.description}</p>
-              </div>
-
               <div className="mb-8">
-                <span className="text-4xl font-bold">{plan.price}</span>
-                <span className="text-muted text-sm ml-1">{plan.period}</span>
+                <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
+                <p className="text-sm text-muted">{plan.description}</p>
               </div>
 
               <ul className="space-y-3 mb-8 flex-1">
