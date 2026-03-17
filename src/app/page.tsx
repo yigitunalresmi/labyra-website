@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   Monitor,
@@ -170,31 +171,20 @@ export default function Home() {
 
             {/* App Preview */}
             <div className="relative">
-              <div className="bg-[#0A0A0A] rounded-2xl border border-[#2a2a2a] p-6 shadow-2xl">
-                <div className="flex gap-2 mb-4">
+              <div className="bg-[#0A0A0A] rounded-2xl border border-[#2a2a2a] p-4 shadow-2xl">
+                <div className="flex gap-2 mb-3">
                   <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
                   <div className="w-3 h-3 rounded-full bg-[#fdbc40]" />
                   <div className="w-3 h-3 rounded-full bg-[#28c840]" />
                 </div>
-                <div className="aspect-[16/10] bg-[#111] rounded-lg flex items-center justify-center overflow-hidden">
-                  <div className="text-center">
-                    <div className="flex items-center justify-center gap-2 mb-3">
-                      {/* Barcode icon for Label product */}
-                      <svg viewBox="0 0 32 32" className="w-8 h-8 text-gold" fill="currentColor">
-                        <rect x="2" y="4" width="2" height="24" rx="1" />
-                        <rect x="6" y="4" width="3" height="24" rx="1" />
-                        <rect x="11" y="4" width="1.5" height="24" rx="0.75" />
-                        <rect x="14" y="4" width="3" height="24" rx="1" />
-                        <rect x="19" y="4" width="2" height="24" rx="1" />
-                        <rect x="23" y="4" width="1.5" height="24" rx="0.75" />
-                        <rect x="26" y="4" width="3" height="24" rx="1" />
-                      </svg>
-                      <span className="text-white font-bold tracking-widest text-lg">LABYRA</span>
-                      <span className="text-gold text-xs font-medium">LABEL</span>
-                    </div>
-                    <p className="text-[#666] text-sm">Uygulama ekran görüntüleri yakında</p>
-                  </div>
-                </div>
+                <Image
+                  src="/screenshots/dashboard.png"
+                  alt="Labyra Label Dashboard"
+                  width={1400}
+                  height={900}
+                  className="rounded-lg"
+                  priority
+                />
               </div>
               <div className="absolute -inset-4 bg-gold/5 rounded-3xl blur-2xl -z-10" />
             </div>

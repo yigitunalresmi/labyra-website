@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Package, Tags, Printer, ScanBarcode, FileSpreadsheet,
   CreditCard, ArrowRight, CheckCircle2, Monitor, Database,
-  Layers, BarChart3, Download,
+  Layers, BarChart3,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -94,14 +95,14 @@ export default function LabyraLabelPage() {
                 href="/iletisim"
                 className="btn-shimmer inline-flex items-center gap-2 bg-cta text-white font-medium rounded-xl px-7 py-3.5 hover:bg-cta-hover transition-colors"
               >
-                <Download size={18} />
-                Ücretsiz Dene
+                Demo Talep Et
+                <ArrowRight size={18} />
               </Link>
               <Link
                 href="/fiyatlandirma"
                 className="inline-flex items-center gap-2 border border-border text-text font-medium rounded-xl px-7 py-3.5 hover:bg-surface transition-colors"
               >
-                Fiyatları Gör
+                Planları İnceleyin
               </Link>
             </div>
           </div>
@@ -112,29 +113,19 @@ export default function LabyraLabelPage() {
       <section className="pb-20">
         <div className="max-w-[1200px] mx-auto px-6 md:px-10">
           <div className="bg-[#0A0A0A] rounded-2xl border border-[#2a2a2a] p-4 md:p-6 shadow-2xl">
-            <div className="flex gap-2 mb-4">
+            <div className="flex gap-2 mb-3">
               <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
               <div className="w-3 h-3 rounded-full bg-[#fdbc40]" />
               <div className="w-3 h-3 rounded-full bg-[#28c840]" />
             </div>
-            <div className="aspect-[16/9] bg-[#111] rounded-lg flex items-center justify-center">
-              <div className="text-center space-y-4">
-                <div className="flex items-center justify-center gap-3">
-                  <svg viewBox="0 0 32 32" className="w-10 h-10 text-gold" fill="currentColor">
-                    <rect x="2" y="4" width="2" height="24" rx="1" />
-                    <rect x="6" y="4" width="3" height="24" rx="1" />
-                    <rect x="11" y="4" width="1.5" height="24" rx="0.75" />
-                    <rect x="14" y="4" width="3" height="24" rx="1" />
-                    <rect x="19" y="4" width="2" height="24" rx="1" />
-                    <rect x="23" y="4" width="1.5" height="24" rx="0.75" />
-                    <rect x="26" y="4" width="3" height="24" rx="1" />
-                  </svg>
-                  <span className="text-white font-bold tracking-widest text-2xl">LABYRA</span>
-                  <span className="text-gold text-sm font-medium">LABEL</span>
-                </div>
-                <p className="text-[#555] text-sm">Dashboard | 8,902 ürün | Kategoriler | Veri Kalitesi | Son İşlemler</p>
-              </div>
-            </div>
+            <Image
+              src="/screenshots/dashboard.png"
+              alt="Labyra Label Dashboard — Ürün ve barkod yönetimi"
+              width={1400}
+              height={900}
+              className="rounded-lg"
+              priority
+            />
           </div>
         </div>
       </section>
@@ -219,7 +210,7 @@ export default function LabyraLabelPage() {
             Hemen başlayın
           </h2>
           <p className="text-muted text-lg mb-8 max-w-lg mx-auto">
-            14 gün ücretsiz deneme. Kredi kartı gerekmez.
+            İhtiyaçlarınıza uygun planı birlikte belirleyelim.
           </p>
           <Link
             href="/iletisim"
