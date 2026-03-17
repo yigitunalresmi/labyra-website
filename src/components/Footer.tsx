@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SITE } from "@/lib/constants";
+import LabyraLogo from "@/components/LabyraLogo";
 
 export default function Footer() {
   return (
@@ -10,15 +11,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <svg viewBox="0 0 32 32" className="w-6 h-6" fill="currentColor">
-                <rect x="2" y="4" width="2" height="24" rx="1" />
-                <rect x="6" y="4" width="3" height="24" rx="1" />
-                <rect x="11" y="4" width="1.5" height="24" rx="0.75" />
-                <rect x="14" y="4" width="3" height="24" rx="1" />
-                <rect x="19" y="4" width="2" height="24" rx="1" />
-                <rect x="23" y="4" width="1.5" height="24" rx="0.75" />
-                <rect x="26" y="4" width="3" height="24" rx="1" />
-              </svg>
+              <LabyraLogo className="w-6 h-6" />
               <span className="font-bold tracking-tight">LABYRA</span>
             </Link>
             <p className="text-sm text-muted leading-relaxed">

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "@/lib/constants";
+import LabyraLogo from "@/components/LabyraLogo";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -26,16 +27,8 @@ export default function Navbar() {
       <div className="max-w-[1200px] mx-auto flex items-center justify-between px-6 md:px-10 h-[72px]">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="w-8 h-8 flex items-center justify-center">
-            <svg viewBox="0 0 32 32" className="w-7 h-7" fill="currentColor">
-              <rect x="2" y="4" width="2" height="24" rx="1" />
-              <rect x="6" y="4" width="3" height="24" rx="1" />
-              <rect x="11" y="4" width="1.5" height="24" rx="0.75" />
-              <rect x="14" y="4" width="3" height="24" rx="1" />
-              <rect x="19" y="4" width="2" height="24" rx="1" />
-              <rect x="23" y="4" width="1.5" height="24" rx="0.75" />
-              <rect x="26" y="4" width="3" height="24" rx="1" />
-            </svg>
+          <div className="logo-spin">
+            <LabyraLogo className="w-8 h-8" />
           </div>
           <span className="text-xl font-bold tracking-tight">LABYRA</span>
         </Link>
