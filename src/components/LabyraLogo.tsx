@@ -8,7 +8,6 @@ export default function LabyraLogo({ className = "w-8 h-8" }: { className?: stri
         stroke="currentColor"
         strokeWidth="4.5"
         strokeLinecap="round"
-        style={{ transformOrigin: "50px 50px" }}
       />
       {/* Middle arc */}
       <path
@@ -17,7 +16,6 @@ export default function LabyraLogo({ className = "w-8 h-8" }: { className?: stri
         stroke="currentColor"
         strokeWidth="4.5"
         strokeLinecap="round"
-        style={{ transformOrigin: "50px 50px" }}
       />
       {/* Inner arc */}
       <path
@@ -26,7 +24,6 @@ export default function LabyraLogo({ className = "w-8 h-8" }: { className?: stri
         stroke="currentColor"
         strokeWidth="4.5"
         strokeLinecap="round"
-        style={{ transformOrigin: "50px 50px" }}
       />
       {/* Gold center dot */}
       <circle cx="50" cy="50" r="4.5" fill="#C4A882" />
