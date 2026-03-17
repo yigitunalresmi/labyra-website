@@ -4,8 +4,8 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 import { PLANS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Fiyatlandirma",
-  description: "Labyra Label fiyat planlari. Trial, Lite ve Pro secenekleri ile isletmenize uygun plani secin.",
+  title: "Fiyatlandırma",
+  description: "Labyra Label fiyat planları. Trial, Lite ve Pro seçenekleri ile işletmenize uygun planı seçin.",
 };
 
 export default function PricingPage() {
@@ -15,17 +15,16 @@ export default function PricingPage() {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            Sade ve seffaf{" "}
-            <span className="text-gold-gradient">fiyatlandirma</span>
+            Sade ve şeffaf{" "}
+            <span className="text-gold-gradient">fiyatlandırma</span>
           </h1>
           <p className="text-muted text-lg">
-            Gizli ucret yok. Istediginiz zaman iptal edin.
+            Gizli ücret yok. İstediğiniz zaman iptal edin.
           </p>
         </div>
 
         {/* Plans */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {/* Reorder: Trial, Lite, Pro (Pro in middle for highlight) */}
           {[PLANS[0], PLANS[2], PLANS[1]].map((plan) => (
             <div
               key={plan.name}
@@ -37,7 +36,7 @@ export default function PricingPage() {
             >
               {plan.highlighted && (
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-semibold bg-gold text-white px-4 py-1 rounded-full">
-                  En Populer
+                  En Popüler
                 </span>
               )}
               <div className="mb-6">
@@ -81,15 +80,15 @@ export default function PricingPage() {
         {/* Enterprise Note */}
         <div className="mt-16 max-w-2xl mx-auto text-center">
           <div className="bg-surface border border-border rounded-2xl p-8">
-            <h3 className="text-lg font-semibold mb-2">Kurumsal cozum mu ariyorsunuz?</h3>
+            <h3 className="text-lg font-semibold mb-2">Kurumsal çözüm mü arıyorsunuz?</h3>
             <p className="text-sm text-muted mb-4">
-              50+ cihaz, ozel entegrasyon veya API erisimi icin bizimle iletisime gecin.
+              50+ cihaz, özel entegrasyon veya API erişimi için bizimle iletişime geçin.
             </p>
             <Link
               href="/iletisim"
               className="inline-flex items-center gap-2 text-sm font-medium text-gold-dark hover:text-gold transition-colors"
             >
-              Bizimle konusun <ArrowRight size={16} />
+              Bizimle konuşun <ArrowRight size={16} />
             </Link>
           </div>
         </div>

@@ -22,32 +22,32 @@ export default function Footer() {
               <span className="font-bold tracking-tight">LABYRA</span>
             </Link>
             <p className="text-sm text-muted leading-relaxed">
-              Is yaziliminin onunde degil, yaninda duruyoruz.
+              İş yazılımının önünde değil, yanında duruyoruz.
             </p>
           </div>
 
-          {/* Urunler */}
+          {/* Ürünler */}
           <div>
-            <h4 className="font-semibold text-sm mb-4">Urunler</h4>
+            <h4 className="font-semibold text-sm mb-4">Ürünler</h4>
             <ul className="space-y-3">
               <li><Link href="/urunler/labyra-label" className="text-sm text-muted hover:text-text transition-colors">Labyra Label</Link></li>
-              <li><Link href="/fiyatlandirma" className="text-sm text-muted hover:text-text transition-colors">Fiyatlandirma</Link></li>
+              <li><Link href="/fiyatlandirma" className="text-sm text-muted hover:text-text transition-colors">Fiyatlandırma</Link></li>
             </ul>
           </div>
 
-          {/* Sirket */}
+          {/* Şirket */}
           <div>
-            <h4 className="font-semibold text-sm mb-4">Sirket</h4>
+            <h4 className="font-semibold text-sm mb-4">Şirket</h4>
             <ul className="space-y-3">
-              <li><Link href="/hakkimizda" className="text-sm text-muted hover:text-text transition-colors">Hakkimizda</Link></li>
+              <li><Link href="/hakkimizda" className="text-sm text-muted hover:text-text transition-colors">Hakkımızda</Link></li>
               <li><Link href="/sss" className="text-sm text-muted hover:text-text transition-colors">SSS</Link></li>
-              <li><Link href="/iletisim" className="text-sm text-muted hover:text-text transition-colors">Iletisim</Link></li>
+              <li><Link href="/iletisim" className="text-sm text-muted hover:text-text transition-colors">İletişim</Link></li>
             </ul>
           </div>
 
-          {/* Iletisim */}
+          {/* İletişim */}
           <div>
-            <h4 className="font-semibold text-sm mb-4">Iletisim</h4>
+            <h4 className="font-semibold text-sm mb-4">İletişim</h4>
             <ul className="space-y-3">
               <li className="text-sm text-muted">{SITE.email}</li>
             </ul>
@@ -58,8 +58,8 @@ export default function Footer() {
         <div className="border-t border-border py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted">{SITE.copyright}</p>
           <div className="flex gap-6">
-            <Link href="#" className="text-xs text-muted hover:text-text transition-colors">Gizlilik Politikasi</Link>
-            <Link href="#" className="text-xs text-muted hover:text-text transition-colors">Kullanim Kosullari</Link>
+            <Link href="#" className="text-xs text-muted hover:text-text transition-colors">Gizlilik Politikası</Link>
+            <Link href="#" className="text-xs text-muted hover:text-text transition-colors">Kullanım Koşulları</Link>
           </div>
         </div>
       </div>

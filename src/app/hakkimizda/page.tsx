@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Target, Eye, Heart, Users } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Hakkimizda",
-  description: "Labyra'nin hikayesi, misyonu ve vizyonu. Is yaziliminin yaninda duruyoruz.",
+  title: "Hakkımızda",
+  description: "Labyra'nın hikayesi, misyonu ve vizyonu. İş yazılımının yanında duruyoruz.",
 };
 
 export default function AboutPage() {
@@ -13,12 +13,12 @@ export default function AboutPage() {
         {/* Header */}
         <div className="max-w-3xl mb-20">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
-            Is yaziliminin onunde degil,{" "}
-            <span className="text-gold-gradient">yaninda duruyoruz</span>
+            İş yazılımının önünde değil,{" "}
+            <span className="text-gold-gradient">yanında duruyoruz</span>
           </h1>
           <p className="text-lg text-muted leading-relaxed">
-            Labyra, isletmelerin gunluk operasyonlarini kolaylastirmak icin
-            kuruldu. Karmasik surecler yerine sade ve guclu araclar sunuyoruz.
+            Labyra, işletmelerin günlük operasyonlarını kolaylaştırmak için
+            kuruldu. Karmaşık süreçler yerine sade ve güçlü araçlar sunuyoruz.
           </p>
         </div>
 
@@ -30,12 +30,12 @@ export default function AboutPage() {
             </div>
             <span className="text-xs font-medium text-white/50 uppercase tracking-wider">Misyon</span>
             <h2 className="text-2xl font-bold mt-2 mb-4">
-              Her isletmenin is sureclerini sadeleştirmek
+              Her işletmenin iş süreçlerini sadeleştirmek
             </h2>
             <p className="text-white/70 leading-relaxed">
-              Isletmelerin urun yonetimi, etiketleme ve barkod islemlerini
-              minimum adimla, maksimum verimlilikle yapmalarini sagliyoruz.
-              Teknolojinin karmasikligi kullaniciya yansimamali.
+              İşletmelerin ürün yönetimi, etiketleme ve barkod işlemlerini
+              minimum adımla, maksimum verimlilikle yapmalarını sağlıyoruz.
+              Teknolojinin karmaşıklığı kullanıcıya yansımamalı.
             </p>
           </div>
 
@@ -45,35 +45,35 @@ export default function AboutPage() {
             </div>
             <span className="text-xs font-medium text-muted uppercase tracking-wider">Vizyon</span>
             <h2 className="text-2xl font-bold mt-2 mb-4">
-              Her isletme en iyi yazilima erisebilmeli
+              Her işletme en iyi yazılıma erişebilmeli
             </h2>
             <p className="text-muted leading-relaxed">
-              Sinif farki olmaksizin, kucuk esnaftan buyuk sirketlere kadar
-              herkesin profesyonel is araclarina ulasabilecegi bir ekosistem
-              olusturuyoruz.
+              Sınıf farkı olmaksızın, küçük esnaftan büyük şirketlere kadar
+              herkesin profesyonel iş araçlarına ulaşabilceği bir ekosistem
+              oluşturuyoruz.
             </p>
           </div>
         </div>
 
         {/* Values */}
         <div className="mb-20">
-          <h2 className="text-2xl font-bold mb-10 text-center">Degerlerimiz</h2>
+          <h2 className="text-2xl font-bold mb-10 text-center">Değerlerimiz</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 icon: Heart,
                 title: "Sadelik",
-                desc: "Arayuz degil, sonuc. Her ozellik minimum tiklamayla erisilebilir olmali.",
+                desc: "Arayüz değil, sonuç. Her özellik minimum tıklamayla erişilebilir olmalı.",
               },
               {
                 icon: Users,
-                title: "Kullanici Odaklilik",
-                desc: "Yazilim kullaniciya hizmet eder, tersi degil. Gercek is akislarindan ogreniyoruz.",
+                title: "Kullanıcı Odaklılık",
+                desc: "Yazılım kullanıcıya hizmet eder, tersi değil. Gerçek iş akışlarından öğreniyoruz.",
               },
               {
                 icon: Target,
-                title: "Surekli Gelisim",
-                desc: "Her guncelleme, kullanicilarimizin geri bildirimlerinden dogar. Dinleriz, gelistiririz.",
+                title: "Sürekli Gelişim",
+                desc: "Her güncelleme, kullanıcılarımızın geri bildirimlerinden doğar. Dinleriz, geliştiririz.",
               },
             ].map((value) => (
               <div key={value.title} className="text-center p-8">
@@ -89,13 +89,13 @@ export default function AboutPage() {
 
         {/* Timeline */}
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl font-bold mb-10 text-center">Yolculugumuz</h2>
+          <h2 className="text-2xl font-bold mb-10 text-center">Yolculuğumuz</h2>
           <div className="space-y-8">
             {[
-              { year: "2025", event: "Labyra Scan olarak ilk versiyon gelistirildi" },
-              { year: "2026 Q1", event: "Labyra Label olarak yeniden markalandi" },
-              { year: "2026 Q1", event: "Web SaaS'tan Windows masaustu uygulamasina gecis" },
-              { year: "2026 Q2", event: "Labyra Label v1.0 — Halka acik ilk surum" },
+              { year: "2025", event: "Labyra Scan olarak ilk versiyon geliştirildi" },
+              { year: "2026 Q1", event: "Labyra Label olarak yeniden markalandı" },
+              { year: "2026 Q1", event: "Web SaaS'tan Windows masaüstü uygulamasına geçiş" },
+              { year: "2026 Q2", event: "Labyra Label v1.0 — Halka açık ilk sürüm" },
             ].map((item, i) => (
               <div key={i} className="flex gap-6 items-start">
                 <div className="shrink-0 w-20 text-right">

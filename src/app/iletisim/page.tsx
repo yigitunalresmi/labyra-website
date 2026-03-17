@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Mail, MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Iletisim",
-  description: "Labyra ile iletisime gecin. Demo talep edin veya sorularinizi sorun.",
+  title: "İletişim",
+  description: "Labyra ile iletişime geçin. Demo talep edin veya sorularınızı sorun.",
 };
 
 export default function ContactPage() {
@@ -15,11 +15,11 @@ export default function ContactPage() {
           <div>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
               Bizimle{" "}
-              <span className="text-gold-gradient">iletisime gecin</span>
+              <span className="text-gold-gradient">iletişime geçin</span>
             </h1>
             <p className="text-lg text-muted leading-relaxed mb-10">
-              Demo talep edin, sorularinizi sorun veya onerilerinizi paylasin.
-              Size en kisa surede donecegiz.
+              Demo talep edin, sorularınızı sorun veya önerilerinizi paylaşın.
+              Size en kısa sürede döneceğiz.
             </p>
 
             <div className="space-y-6">
@@ -38,7 +38,7 @@ export default function ContactPage() {
                   <Clock size={22} className="text-gold-dark" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Calisma Saatleri</h3>
+                  <h3 className="font-semibold mb-1">Çalışma Saatleri</h3>
                   <p className="text-sm text-muted">Pazartesi - Cuma, 09:00 - 18:00</p>
                 </div>
               </div>
@@ -49,7 +49,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Konum</h3>
-                  <p className="text-sm text-muted">Istanbul, Turkiye</p>
+                  <p className="text-sm text-muted">İstanbul, Türkiye</p>
                 </div>
               </div>
             </div>
@@ -64,15 +64,15 @@ export default function ContactPage() {
                   <label className="block text-sm font-medium mb-2">Ad Soyad</label>
                   <input
                     type="text"
-                    placeholder="Adiniz"
+                    placeholder="Adınız"
                     className="w-full px-4 py-3 rounded-xl border border-border bg-bg text-sm focus:outline-none focus:ring-2 focus:ring-gold/30 focus:border-gold transition-all"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">Sirket</label>
+                  <label className="block text-sm font-medium mb-2">Şirket</label>
                   <input
                     type="text"
-                    placeholder="Sirket adiniz"
+                    placeholder="Şirket adınız"
                     className="w-full px-4 py-3 rounded-xl border border-border bg-bg text-sm focus:outline-none focus:ring-2 focus:ring-gold/30 focus:border-gold transition-all"
                   />
                 </div>
@@ -97,10 +97,10 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium mb-2">Ilgilendiginiz Plan</label>
+                <label className="block text-sm font-medium mb-2">İlgilendiğiniz Plan</label>
                 <select className="w-full px-4 py-3 rounded-xl border border-border bg-bg text-sm focus:outline-none focus:ring-2 focus:ring-gold/30 focus:border-gold transition-all">
-                  <option value="">Secin</option>
-                  <option value="trial">Trial (Ucretsiz Deneme)</option>
+                  <option value="">Seçin</option>
+                  <option value="trial">Trial (Ücretsiz Deneme)</option>
                   <option value="lite">Lite</option>
                   <option value="pro">Pro</option>
                   <option value="enterprise">Kurumsal</option>
@@ -108,10 +108,10 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium mb-2">Mesajiniz</label>
+                <label className="block text-sm font-medium mb-2">Mesajınız</label>
                 <textarea
                   rows={4}
-                  placeholder="Nasil yardimci olabiliriz?"
+                  placeholder="Nasıl yardımcı olabiliriz?"
                   className="w-full px-4 py-3 rounded-xl border border-border bg-bg text-sm focus:outline-none focus:ring-2 focus:ring-gold/30 focus:border-gold transition-all resize-none"
                 />
               </div>
@@ -120,10 +120,10 @@ export default function ContactPage() {
                 type="submit"
                 className="btn-shimmer w-full bg-cta text-white font-medium rounded-xl px-6 py-3.5 hover:bg-cta-hover transition-colors"
               >
-                Gonder
+                Gönder
               </button>
               <p className="text-xs text-muted text-center">
-                Bilgileriniz gizli tutulur ve ucuncu taraflarla paylasilmaz.
+                Bilgileriniz gizli tutulur ve üçüncü taraflarla paylaşılmaz.
               </p>
             </form>
           </div>

@@ -24,7 +24,6 @@ export default function Home() {
     <>
       {/* ── HERO ── */}
       <section className="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
-        {/* Background decoration */}
         <div className="absolute top-20 right-0 w-[500px] h-[500px] rounded-full bg-gold/5 blur-[120px] pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-gold/3 blur-[100px] pointer-events-none" />
 
@@ -32,18 +31,18 @@ export default function Home() {
           <div className="max-w-3xl">
             <div className="animate-fade-in">
               <span className="inline-block text-sm font-medium text-gold-dark bg-tag-bg rounded-full px-4 py-1.5 mb-6">
-                Labyra Label v1.0 — Masaustu uygulamasi yaklasik
+                Labyra Label v1.0 — Masaüstü uygulaması yaklaşıyor
               </span>
             </div>
 
             <h1 className="animate-fade-in animate-fade-in-delay-1 text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.08] tracking-tight mb-6">
-              Is dunyasinin karmasikligina{" "}
-              <span className="text-gold-gradient">sade bir yanit</span>
+              İş dünyasının karmaşıklığına{" "}
+              <span className="text-gold-gradient">sade bir yanıt</span>
             </h1>
 
             <p className="animate-fade-in animate-fade-in-delay-2 text-lg md:text-xl text-muted leading-relaxed max-w-xl mb-10">
-              Is sureclerinizi daha az adima indirin. Urun yonetiminden etiket
-              baskisina, tek platformda guc ve sadelik.
+              İş süreçlerinizi daha az adıma indirin. Ürün yönetiminden etiket
+              baskısına, tek platformda güç ve sadelik.
             </p>
 
             <div className="animate-fade-in animate-fade-in-delay-3 flex flex-wrap gap-4">
@@ -58,7 +57,7 @@ export default function Home() {
                 href="/urunler/labyra-label"
                 className="inline-flex items-center gap-2 border border-border text-text font-medium rounded-xl px-7 py-3.5 hover:bg-surface transition-colors"
               >
-                Nasil calisir?
+                Nasıl çalışır?
               </Link>
             </div>
           </div>
@@ -66,9 +65,9 @@ export default function Home() {
           {/* Proof Bar */}
           <div className="animate-fade-in animate-fade-in-delay-4 mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0 md:divide-x divide-border bg-surface rounded-2xl border border-border p-8">
             {[
-              { value: "%80", label: "Daha az tiklama" },
-              { value: "3x", label: "Daha hizli surec" },
-              { value: "1 gun", label: "Ortalama gecis suresi" },
+              { value: "%80", label: "Daha az tıklama" },
+              { value: "3x", label: "Daha hızlı süreç" },
+              { value: "1 gün", label: "Ortalama geçiş süresi" },
             ].map((item) => (
               <div key={item.label} className="text-center px-6">
                 <p className="text-3xl md:text-4xl font-bold text-gold-gradient mb-1">
@@ -86,11 +85,11 @@ export default function Home() {
         <div className="max-w-[1200px] mx-auto px-6 md:px-10">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-              Tek platformda tum ihtiyaclariniz
+              Tek platformda tüm ihtiyaçlarınız
             </h2>
             <p className="text-muted text-lg">
-              Urun yonetiminden etiket baskisina, CSV importtan fiyat taramaya
-              — her sey Labyra Label icinde.
+              Ürün yönetiminden etiket baskısına, CSV import&apos;tan fiyat taramaya
+              — her şey Labyra Label içinde.
             </p>
           </div>
 
@@ -122,30 +121,30 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-                Karmasik degil —{" "}
+                Karmaşık değil —{" "}
                 <span className="text-gold-gradient">sadece derin</span>
               </h2>
               <p className="text-muted text-lg leading-relaxed mb-8">
-                Labyra, karmasik is sureclerini basit adimlara donusturur.
-                Arayuz degil sonuc odakliyiz.
+                Labyra, karmaşık iş süreçlerini basit adımlara dönüştürür.
+                Arayüz değil sonuç odaklıyız.
               </p>
 
               <div className="space-y-5">
                 {[
                   {
                     icon: Monitor,
-                    title: "Masaustu Uygulamasi",
-                    desc: "Internet baglantisi gerektirmez. Verileriniz kendi bilgisayarinizda.",
+                    title: "Masaüstü Uygulaması",
+                    desc: "İnternet bağlantısı gerektirmez. Verileriniz kendi bilgisayarınızda.",
                   },
                   {
                     icon: Zap,
-                    title: "Anlik Performans",
-                    desc: "SQLite tabanli yerel veritabani ile milisaniye seviyesinde islem suresi.",
+                    title: "Anlık Performans",
+                    desc: "SQLite tabanlı yerel veritabanı ile milisaniye seviyesinde işlem süresi.",
                   },
                   {
                     icon: Shield,
-                    title: "Veri Guvenligi",
-                    desc: "Buluta veri gonderilmez. Tam kontrol sizde.",
+                    title: "Veri Güvenliği",
+                    desc: "Buluta veri gönderilmez. Tam kontrol sizde.",
                   },
                 ].map((item) => (
                   <div key={item.title} className="flex gap-4">
@@ -184,11 +183,10 @@ export default function Home() {
                       <span className="text-white font-bold tracking-widest text-lg">LABYRA</span>
                       <span className="text-gold text-xs font-medium">LABEL</span>
                     </div>
-                    <p className="text-[#666] text-sm">Uygulama ekran goruntuleri yaklasim</p>
+                    <p className="text-[#666] text-sm">Uygulama ekran görüntüleri yakında</p>
                   </div>
                 </div>
               </div>
-              {/* Glow effect */}
               <div className="absolute -inset-4 bg-gold/5 rounded-3xl blur-2xl -z-10" />
             </div>
           </div>
@@ -200,10 +198,10 @@ export default function Home() {
         <div className="max-w-[1200px] mx-auto px-6 md:px-10">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-              3 adimda baslayin
+              3 adımda başlayın
             </h2>
             <p className="text-muted text-lg">
-              Kurulum dakikalar icerisinde tamamlanir.
+              Kurulum dakikalar içerisinde tamamlanır.
             </p>
           </div>
 
@@ -212,17 +210,17 @@ export default function Home() {
               {
                 step: "01",
                 title: "Kurun",
-                desc: "Labyra Label installer'i indirin ve Windows bilgisayariniza kurun. Tek tikla kurulum.",
+                desc: "Labyra Label installer'ı indirin ve Windows bilgisayarınıza kurun. Tek tıkla kurulum.",
               },
               {
                 step: "02",
-                title: "Aktarin",
-                desc: "Mevcut urun listenizi CSV veya Excel ile iceri aktarin. Otomatik sutun eslestirme.",
+                title: "Aktarın",
+                desc: "Mevcut ürün listenizi CSV veya Excel ile içeri aktarın. Otomatik sütun eşleştirme.",
               },
               {
                 step: "03",
-                title: "Baslayin",
-                desc: "Etiketlerinizi tasarlayin, barkodlari okutun, toplu baski yapin. Hepsi hazir.",
+                title: "Başlayın",
+                desc: "Etiketlerinizi tasarlayın, barkodları okutun, toplu baskı yapın. Hepsi hazır.",
               },
             ].map((item) => (
               <div
@@ -248,10 +246,10 @@ export default function Home() {
           <div className="relative bg-cta text-white rounded-3xl p-12 md:p-20 text-center overflow-hidden">
             <div className="absolute top-0 right-0 w-[300px] h-[300px] rounded-full bg-gold/10 blur-[80px] pointer-events-none" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4 relative z-10">
-              Labyra Label&apos;i ucretsiz deneyin
+              Labyra Label&apos;ı ücretsiz deneyin
             </h2>
             <p className="text-white/70 text-lg mb-8 max-w-lg mx-auto relative z-10">
-              14 gun boyunca tum ozellikleri kesfedln. Kredi karti gerekmez.
+              14 gün boyunca tüm özellikleri keşfedin. Kredi kartı gerekmez.
             </p>
             <div className="flex flex-wrap justify-center gap-4 relative z-10">
               <Link
@@ -265,7 +263,7 @@ export default function Home() {
                 href="/fiyatlandirma"
                 className="inline-flex items-center gap-2 border border-white/30 text-white font-medium rounded-xl px-7 py-3.5 hover:bg-white/10 transition-colors"
               >
-                Fiyatlari Gor
+                Fiyatları Gör
               </Link>
             </div>
           </div>

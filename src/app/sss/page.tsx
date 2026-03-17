@@ -1,6 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { FAQ_ITEMS } from "@/lib/constants";
@@ -38,10 +37,10 @@ export default function FAQPage() {
       <div className="max-w-[800px] mx-auto px-6 md:px-10">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            Sik Sorulan <span className="text-gold-gradient">Sorular</span>
+            Sık Sorulan <span className="text-gold-gradient">Sorular</span>
           </h1>
           <p className="text-muted text-lg">
-            Merak ettiginiz her seyin cevabi burada.
+            Merak ettiğiniz her şeyin cevabı burada.
           </p>
         </div>
 
@@ -53,16 +52,16 @@ export default function FAQPage() {
 
         <div className="mt-16 text-center bg-surface border border-border rounded-2xl p-8">
           <h3 className="text-lg font-semibold mb-2">
-            Sorunuzun cevabini bulamadini mi?
+            Sorunuzun cevabını bulamadınız mı?
           </h3>
           <p className="text-sm text-muted mb-4">
-            Bize yazin, en kisa surede donelim.
+            Bize yazın, en kısa sürede dönelim.
           </p>
           <a
             href="/iletisim"
             className="inline-flex items-center gap-2 text-sm font-medium text-gold-dark hover:text-gold transition-colors"
           >
-            Iletisime gecin
+            İletişime geçin
           </a>
         </div>
       </div>

@@ -11,20 +11,20 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Labyra | Is Yazilimi Cozumleri",
+    default: "Labyra | İş Yazılımı Çözümleri",
     template: "%s | Labyra",
   },
   description:
-    "Labyra, isletmelerin urun, barkod ve etiket yonetimini kolaylastiran profesyonel masaustu yazilim cozumleri sunar.",
+    "Labyra, işletmelerin ürün, barkod ve etiket yönetimini kolaylaştıran profesyonel masaüstü yazılım çözümleri sunar.",
   keywords: [
-    "barkod yazilimi",
+    "barkod yazılımı",
     "etiket basma",
-    "urun yonetimi",
-    "stok yonetimi",
+    "ürün yönetimi",
+    "stok yönetimi",
     "barkod okuyucu",
-    "etiket tasarimi",
+    "etiket tasarımı",
     "CSV import",
-    "toplu baski",
+    "toplu baskı",
     "labyra",
     "labyra label",
   ],
@@ -36,15 +36,15 @@ export const metadata: Metadata = {
     locale: "tr_TR",
     url: "https://labyra.co",
     siteName: "Labyra",
-    title: "Labyra | Is Yazilimi Cozumleri",
+    title: "Labyra | İş Yazılımı Çözümleri",
     description:
-      "Urun, barkod ve etiket yonetimini kolaylastiran profesyonel masaustu yazilim.",
+      "Ürün, barkod ve etiket yönetimini kolaylaştıran profesyonel masaüstü yazılım.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Labyra | Is Yazilimi Cozumleri",
+    title: "Labyra | İş Yazılımı Çözümleri",
     description:
-      "Urun, barkod ve etiket yonetimini kolaylastiran profesyonel masaustu yazilim.",
+      "Ürün, barkod ve etiket yönetimini kolaylaştıran profesyonel masaüstü yazılım.",
   },
   robots: {
     index: true,

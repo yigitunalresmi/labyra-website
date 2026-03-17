@@ -7,63 +7,63 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Labyra Label — Urun, Barkod ve Etiket Yonetimi",
-  description: "Binlerce urunu yonetin, profesyonel etiketler tasarlayin, toplu baski yapin. Windows masaustu uygulamasi.",
+  title: "Labyra Label — Ürün, Barkod ve Etiket Yönetimi",
+  description: "Binlerce ürünü yönetin, profesyonel etiketler tasarlayın, toplu baskı yapın. Windows masaüstü uygulaması.",
 };
 
 const CAPABILITIES = [
   {
     icon: Package,
-    title: "8.900+ Urun Yonetimi",
-    desc: "Kategorize edin, arain, filtreleyin. Toplu CSV/Excel import ve export.",
+    title: "8.900+ Ürün Yönetimi",
+    desc: "Kategorize edin, arayın, filtreleyin. Toplu CSV/Excel import ve export.",
     color: "bg-blue-50 text-blue-600",
   },
   {
     icon: Tags,
-    title: "Surekle-Birak Etiket Tasarimi",
-    desc: "Barkod, QR kod, fiyat, urun adi — istediginiz bilgiyi surukleyip birakin.",
+    title: "Sürükle-Bırak Etiket Tasarımı",
+    desc: "Barkod, QR kod, fiyat, ürün adı — istediğiniz bilgiyi sürükleyip bırakın.",
     color: "bg-amber-50 text-amber-600",
   },
   {
     icon: Printer,
-    title: "Toplu Baski & Barkod Tarama",
-    desc: "Barkod okuyucu ile tarayin, aninda yazdirin. Seri baski modu.",
+    title: "Toplu Baskı & Barkod Tarama",
+    desc: "Barkod okuyucu ile tarayın, anında yazdırın. Seri baskı modu.",
     color: "bg-green-50 text-green-600",
   },
   {
     icon: ScanBarcode,
-    title: "Fiyat Tarayici",
-    desc: "Barkod okutarak anlik fiyat guncelleme. Degisiklik gecmisi.",
+    title: "Fiyat Tarayıcı",
+    desc: "Barkod okutarak anlık fiyat güncelleme. Değişiklik geçmişi.",
     color: "bg-purple-50 text-purple-600",
   },
   {
     icon: FileSpreadsheet,
-    title: "Akilli CSV Import",
-    desc: "6 adimli wizard: encoding algilama, onizleme, sutun eslestirme, rollback.",
+    title: "Akıllı CSV Import",
+    desc: "6 adımlı wizard: encoding algılama, önizleme, sütun eşleştirme, rollback.",
     color: "bg-rose-50 text-rose-600",
   },
   {
     icon: CreditCard,
-    title: "Urun Karti Uretici",
-    desc: "Kategoriye ozel sablonlar ile otomatik urun bilgi kartlari.",
+    title: "Ürün Kartı Üretici",
+    desc: "Kategoriye özel şablonlar ile otomatik ürün bilgi kartları.",
     color: "bg-teal-50 text-teal-600",
   },
   {
     icon: Database,
-    title: "Yerel Veritabani",
-    desc: "SQLite tabanli, internet gerektirmez. Verileriniz sizde kalir.",
+    title: "Yerel Veritabanı",
+    desc: "SQLite tabanlı, internet gerektirmez. Verileriniz sizde kalır.",
     color: "bg-indigo-50 text-indigo-600",
   },
   {
     icon: Layers,
-    title: "Sablon Versiyonlama",
-    desc: "Etiket sablonlarini versiyonlayin, onceki versiyonlara donun.",
+    title: "Şablon Versiyonlama",
+    desc: "Etiket şablonlarını versiyonlayın, önceki versiyonlara dönün.",
     color: "bg-orange-50 text-orange-600",
   },
   {
     icon: BarChart3,
     title: "Dashboard & Analitik",
-    desc: "Urun istatistikleri, veri kalitesi, son islemler bir bakista.",
+    desc: "Ürün istatistikleri, veri kalitesi, son işlemler bir bakışta.",
     color: "bg-cyan-50 text-cyan-600",
   },
 ];
@@ -80,14 +80,14 @@ export default function LabyraLabelPage() {
         <div className="max-w-[1200px] mx-auto px-6 md:px-10">
           <div className="max-w-3xl">
             <span className="inline-block text-sm font-medium text-gold-dark bg-tag-bg rounded-full px-4 py-1.5 mb-6">
-              Masaustu Uygulamasi — Windows 10/11
+              Masaüstü Uygulaması — Windows 10/11
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6">
               Labyra <span className="text-gold-gradient">Label</span>
             </h1>
             <p className="text-lg md:text-xl text-muted leading-relaxed mb-8">
-              Urun, barkod ve etiket yonetimini tek bir masaustu uygulamasinda
-              birlestirin. Internet gerektirmez, verileriniz sizde kalir.
+              Ürün, barkod ve etiket yönetimini tek bir masaüstü uygulamasında
+              birleştirin. İnternet gerektirmez, verileriniz sizde kalır.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -95,13 +95,13 @@ export default function LabyraLabelPage() {
                 className="btn-shimmer inline-flex items-center gap-2 bg-cta text-white font-medium rounded-xl px-7 py-3.5 hover:bg-cta-hover transition-colors"
               >
                 <Download size={18} />
-                Ucretsiz Dene
+                Ücretsiz Dene
               </Link>
               <Link
                 href="/fiyatlandirma"
                 className="inline-flex items-center gap-2 border border-border text-text font-medium rounded-xl px-7 py-3.5 hover:bg-surface transition-colors"
               >
-                Fiyatlari Gor
+                Fiyatları Gör
               </Link>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function LabyraLabelPage() {
                   <span className="text-white font-bold tracking-widest text-2xl">LABYRA</span>
                   <span className="text-gold text-sm font-medium">LABEL</span>
                 </div>
-                <p className="text-[#555] text-sm">Dashboard | 8,902 urun | Kategoriler | Veri Kalitesi | Son Islemler</p>
+                <p className="text-[#555] text-sm">Dashboard | 8,902 ürün | Kategoriler | Veri Kalitesi | Son İşlemler</p>
               </div>
             </div>
           </div>
@@ -144,10 +144,10 @@ export default function LabyraLabelPage() {
         <div className="max-w-[1200px] mx-auto px-6 md:px-10">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-              Tek uygulama, sinirsiz yetenek
+              Tek uygulama, sınırsız yetenek
             </h2>
             <p className="text-muted text-lg">
-              Is akisinizi hizlandiran 9 temel modul.
+              İş akışınızı hızlandıran 9 temel modül.
             </p>
           </div>
 
@@ -174,10 +174,10 @@ export default function LabyraLabelPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-                Desteklenen barkod turleri
+                Desteklenen barkod türleri
               </h2>
               <p className="text-muted text-lg leading-relaxed mb-8">
-                Uluslararasi standartlarda barkod ve QR kod destegi.
+                Uluslararası standartlarda barkod ve QR kod desteği.
               </p>
               <div className="flex flex-wrap gap-3">
                 {BARCODE_TYPES.map((type) => (
@@ -194,10 +194,10 @@ export default function LabyraLabelPage() {
 
             <div className="space-y-4">
               {[
-                { label: "Urun Yonetimi", value: "8,900+" },
+                { label: "Ürün Yönetimi", value: "8,900+" },
                 { label: "Desteklenen Format", value: "7+" },
                 { label: "Toplu Import", value: "CSV, XLSX" },
-                { label: "Encoding Destegi", value: "UTF-8, ISO, Win-1254" },
+                { label: "Encoding Desteği", value: "UTF-8, ISO, Win-1254" },
               ].map((stat) => (
                 <div
                   key={stat.label}
@@ -216,10 +216,10 @@ export default function LabyraLabelPage() {
       <section className="py-20 md:py-32 bg-surface">
         <div className="max-w-[1200px] mx-auto px-6 md:px-10 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Hemen baslayin
+            Hemen başlayın
           </h2>
           <p className="text-muted text-lg mb-8 max-w-lg mx-auto">
-            14 gun ucretsiz deneme. Kredi karti gerekmez.
+            14 gün ücretsiz deneme. Kredi kartı gerekmez.
           </p>
           <Link
             href="/iletisim"
