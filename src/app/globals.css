@@ -71,18 +71,3 @@ body {
   left: 100%;
 }
 
-/* Logo arc spin on hover — each arc rotates independently around SVG center */
-.logo-arc {
-  transform-box: view-box;
-  transform-origin: 50% 50%;
-  transition: transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-.group:hover .logo-arc-outer {
-  transform: rotate(360deg);
-}
-.group:hover .logo-arc-middle {
-  transform: rotate(-360deg);
-}
-.group:hover .logo-arc-inner {
-  transform: rotate(360deg);
-}
