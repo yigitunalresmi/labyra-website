@@ -17,7 +17,7 @@ export default function CalendlyEmbed() {
     <div
       className="calendly-inline-widget w-full rounded-2xl overflow-hidden border border-border"
       data-url="https://calendly.com/yigitunal-labyra/30min?hide_gdpr_banner=1&background_color=0f0f0f&text_color=e8e4df&primary_color=c4a77d"
-      style={{ minWidth: "320px", height: "700px" }}
+      style={{ minWidth: "320px", height: "900px" }}
     />
   );
 }
